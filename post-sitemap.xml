@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://evan-moon.github.io/2020/03/02/what-is-knowing/</loc>
+        <lastmod>2020-03-01T17:15:00.941Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://evan-moon.github.io/2019/11/16/the-way-to-control-anxiety/</loc>
+        <lastmod>2020-02-26T13:17:30.750Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://evan-moon.github.io/2019/07/28/git-tutorial-advanced/</loc>
+        <lastmod>2020-02-26T13:17:30.749Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://evan-moon.github.io/2020/02/11/question-driven-thinking/</loc>
         <lastmod>2020-02-10T16:28:00.630Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -90,14 +114,6 @@
     <url>
         <loc>https://evan-moon.github.io/2019/11/17/tcp-handshake/</loc>
         <lastmod>2019-12-11T10:49:52.882Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://evan-moon.github.io/2019/11/16/the-way-to-control-anxiety/</loc>
-        <lastmod>2019-12-11T10:49:52.876Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -266,14 +282,6 @@
     <url>
         <loc>https://evan-moon.github.io/2019/08/01/nodejs-event-loop-workflow/</loc>
         <lastmod>2019-12-11T10:49:52.648Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://evan-moon.github.io/2019/07/28/git-tutorial-advanced/</loc>
-        <lastmod>2019-12-11T10:49:52.641Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

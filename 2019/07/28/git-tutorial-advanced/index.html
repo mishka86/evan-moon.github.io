@@ -16,7 +16,7 @@
 <meta property="og:description" content="이번 포스팅에서는 저번 포스팅인 Git 뉴비를 위한 기초 사용법 - 시작하기에서 설명했던 기본적인 명령어보다 좀 더 나아가서 몇 가지 개념과 명령어를 더 공부해보려고 한다. 저번 포스팅에서는 리모트 서버에서 소스를 클론하고 수정한 후 다시 리모트 서버에 업데이트하는 과정에 대해 집중해서 설명했다면 이번 포스팅에서는 Git의 메인 주제인 버전 관리에 대해 더">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://evan-moon.github.io/2019/07/28/git-tutorial-advanced/thumbnail.png">
-<meta property="og:updated_time" content="2019-12-11T10:49:52.641Z">
+<meta property="og:updated_time" content="2020-02-26T13:17:30.749Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 뉴비를 위한 기초 사용법 - 버전 관리">
 <meta name="twitter:description" content="이번 포스팅에서는 저번 포스팅인 Git 뉴비를 위한 기초 사용법 - 시작하기에서 설명했던 기본적인 명령어보다 좀 더 나아가서 몇 가지 개념과 명령어를 더 공부해보려고 한다. 저번 포스팅에서는 리모트 서버에서 소스를 클론하고 수정한 후 다시 리모트 서버에 업데이트하는 과정에 대해 집중해서 설명했다면 이번 포스팅에서는 Git의 메인 주제인 버전 관리에 대해 더">
@@ -334,7 +334,7 @@
 <p>그럼 두개의 <code>master</code>를 강제로 병합해줘야하는데 병합 자체는 푸쉬할때 <code>--force</code> 옵션을 주면 되지만 문제는 이게 굉장히 혼란스러운 상황이라는 것이다. 쉽게 말해서 커밋 히스토리가 꼬이게 되고 사무실의 여기저기서 <code>어? 이거 왜 이래? 왜 푸시 안돼?</code>라는 소리가 들려오기 딱 좋은 상황이다.</p>
 <p>그래서 <code>master</code>로의 병합은 머지 스쿼시를 사용하고 <code>develop</code>으로의 병합 때 리베이스를 사용하거나 하는 경우도 있다. 머지는 머지 커밋을 발생시키며 히스토리가 <code>미래</code>로 나아가기 때문에 이런 문제가 발생할 확률이 적지만, 리베이스는 <code>과거</code>를 변경하는 것이기 때문에 문제가 생기기 쉬운 것이다.</p>
 <p>뭐 여러모로 둘 다 장단점이 있으니 잘 골라서 사용하도록 하자.</p>
-<h3 id="Cherry-Pick"><a href="#Cherry-Pick" class="headerlink" title="Cherry Pick"></a>Cherry Pick</h3><p><code>체리픽(Cherry Pick)</code>은 다른 브랜치에서 어떤 하나의 커밋만 내 브랜치로 가져오는 기능이다. 체리픽이 실제로 하는 일은 대상 브랜치의 커밋 하나를 가져와서 현재 브랜치에 <code>병합</code>하는 행위라고 느껴지지만 히스토리를 보면 <code>병합</code>되는 그림이 아니라 그냥 해당 커밋을 그래도 복사해와서 내 브랜치에 커밋되는 형태로 기록된다.</p>
+<h3 id="Cherry-Pick"><a href="#Cherry-Pick" class="headerlink" title="Cherry Pick"></a>Cherry Pick</h3><p><code>체리픽(Cherry Pick)</code>은 다른 브랜치에서 어떤 하나의 커밋만 내 브랜치로 가져오는 기능이다. 체리픽이 하는 일을 보면 대상 브랜치의 커밋 하나를 가져와서 현재 브랜치에 <code>병합</code>하는 행위라고 느껴지지만 히스토리를 보면 병합되는 그림이 아니라 그냥 해당 커밋을 그대로 복사해와서 내 브랜치에 커밋되는 형태로 기록된다.</p>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git cherry-pick 35058b4 <span class="hljs-comment"># 가져올 커밋 해쉬</span></span><br></pre></td></tr></table></figure>
 <p>물론 체리픽을 사용할 때도 현재 브랜치의 소스와 충돌이 날 가능성은 있기 때문에 가져오기 전에 충돌을 수정할 수도 있다는 마음의 준비는 필요하다. 체리픽은 잘 쓰면 은근히 꿀 기능인데, 바로 이런 상황 때문이다.</p>
 <blockquote><ol>
@@ -540,7 +540,7 @@
                 <span class="level-item">Essay</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">13</span>
+                <span class="level-item tag">14</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/programming/" data-link-name="category">
